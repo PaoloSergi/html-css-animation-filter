@@ -114,13 +114,26 @@
     }
 }
 
-.ex-10-icon:hover{
-    transform: rotate(360deg);
-}
-
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation: giragiradue 1s linear;
+}
+
+@keyframes giragiradue{
+    0%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
